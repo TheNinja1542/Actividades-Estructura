@@ -11,13 +11,14 @@ public class Pilas2 {
         Byte op = 0;
         Stack<Integer> pila = new Stack<>();
 
-        while (op != 4) {
+        while (op != 5) {
             op = Byte.parseByte(JOptionPane.showInputDialog("""
                 Digite un numero
                 1.Insertar
                 2.Eliminar
                 3.Mostrar
-                4.Salir
+                4.Contar elementos
+                5.Salir
             """));
             
             switch (op) {
@@ -46,6 +47,16 @@ public class Pilas2 {
                     }
                 }
                 case 4 ->{
+                    int contador = 0;
+                    int tope =  pila.peek();
+
+                    while( tope != 0){
+                        contador ++;
+                        tope--;
+                    }
+                    JOptionPane.showMessageDialog(null, "Cantidad de elementos: " + contador);
+                }
+                case 5 ->{
                     JOptionPane.showMessageDialog(null, "Hasta la vista ");
                 }
             }
