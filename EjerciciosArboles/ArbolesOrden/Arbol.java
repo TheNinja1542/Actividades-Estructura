@@ -1,4 +1,4 @@
-package ArbolesEjercicios;
+package EjerciciosArboles.ArbolesOrden;
 
 public class Arbol {
 
