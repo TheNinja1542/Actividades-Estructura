@@ -14,6 +14,10 @@ public class Estructura3 {
         arbol.raiz.derecha.derecha = new Arbol3(7);
         //arbol.raiz.izquierda.izquierda.izquierda = new Arbol3(8);
 
-        System.out.println(arbol.Lleno(arbol.raiz)? "Binario lleno" : "Binario no lleno");
+       if (arbol.Lleno(arbol.raiz)) {
+            System.out.println("binario lleno");
+        } else {
+            System.err.println("binario no lleno");
+        }
     }
 }
